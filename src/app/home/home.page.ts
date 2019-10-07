@@ -6,7 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+ 
+  title: String;
+  lista: String[] = ['maças', 'laranjas', 'peras'];
+  flag: Boolean = false;
 
-  constructor() {}
+  constructor() {
 
+    this.title = "Título da minha aplicação"
+    
+    setTimeout(() => {
+      this.flag = true;
+    }, 5000)
+
+  }
+
+  teste(){
+    console.log("Realizando teste")
+  }
 }
